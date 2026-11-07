@@ -1,13 +1,13 @@
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  output: 'export', // <=== Enables static exports
+  output: "export",
+
   images: {
-    unoptimized: true, // GitHub Pages doesn't support Next.js default image optimization
+    unoptimized: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
+
   turbopack: {
     rules: {
       "*.css": {
